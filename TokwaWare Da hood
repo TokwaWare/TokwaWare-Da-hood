@@ -235,7 +235,7 @@ game.StarterGui:SetCore("SendNotification", {
     Button1 = "Okay";
 })
 
-Tab3:Button("Realistic Speed Glitch (X)",function(bool)
+Tab3:Button("Realistic Speed Glitch (V)",function(bool)
     local Player = game:GetService("Players").LocalPlayer
     local Mouse = Player:GetMouse()
     local SpeedGlitch = false
@@ -263,7 +263,7 @@ Tab3:Button("Realistic Speed Glitch (X)",function(bool)
     end
 
     Mouse.KeyDown:Connect(function(Key)
-        if Key == "x" then
+        if Key == "v" then
             SpeedGlitch = not SpeedGlitch
             if SpeedGlitch == true then
                 stopTracks()
